@@ -1,0 +1,194 @@
+{
+ "_comment": "Numbers as they appear in the manuscript, under the four equal-length eras 1978-1989, 1990-2001, 2002-2013, 2014-2025. Era-dependent entries below were produced by 16_eras.py; the generalized Pareto fits and the top-five profile still need regenerating under the new division and are marked pending.",
+ "peaks_median": {
+  "Djokovic": 504,
+  "Borg": 461,
+  "McEnroe": 453,
+  "Lendl": 449,
+  "Federer": 440,
+  "Nadal": 426,
+  "Connors": 411,
+  "Sinner": 396,
+  "Murray": 368,
+  "Alcaraz": 359,
+  "Becker": 344,
+  "Sampras": 333
+ },
+ "pairwise": {
+  "Djokovic>Federer": 0.94,
+  "Djokovic>Nadal": 0.98,
+  "Djokovic>Borg": 0.85,
+  "Djokovic>McEnroe": 0.88,
+  "Djokovic>Lendl": 0.88,
+  "Federer>Borg": 0.27,
+  "Federer>Nadal": 0.69,
+  "Nadal>Borg": 0.17
+ },
+ "sojourn_median_meanN2": {
+  "Federer": 612,
+  "Djokovic": 578,
+  "Nadal": 510,
+  "Lendl": 408,
+  "McEnroe": 365,
+  "Connors": 305,
+  "Murray": 215,
+  "Borg": 205,
+  "Becker": 116,
+  "Sampras": 113
+ },
+ "concurrence": {
+  "meanN2": {
+   "1978-1989": {
+    "E_N": 2.79,
+    "meanP3": 0.639,
+    "total": 341,
+    "wks_p50": 315
+   },
+   "1990-2001": {
+    "E_N": 0.42,
+    "meanP3": 0.01,
+    "total": 0,
+    "wks_p50": 0
+   },
+   "2002-2013": {
+    "E_N": 2.21,
+    "meanP3": 0.418,
+    "total": 191,
+    "wks_p50": 194
+   },
+   "2014-2025": {
+    "E_N": 2.56,
+    "meanP3": 0.541,
+    "total": 241,
+    "wks_p50": 217
+   }
+  },
+  "meanN1": {
+   "1978-1989": {
+    "E_N": 1.56,
+    "meanP3": 0.106,
+    "total": 51,
+    "wks_p50": 0
+   },
+   "1990-2001": {
+    "E_N": 0.02,
+    "meanP3": 0.0,
+    "total": 0,
+    "wks_p50": 0
+   },
+   "2002-2013": {
+    "E_N": 1.23,
+    "meanP3": 0.136,
+    "total": 63,
+    "wks_p50": 57
+   },
+   "2014-2025": {
+    "E_N": 1.15,
+    "meanP3": 0.076,
+    "total": 29,
+    "wks_p50": 0
+   }
+  }
+ },
+ "persistence_meanN1": {
+  "lags": [
+   1,
+   4,
+   13,
+   26,
+   52
+  ],
+  "windows": [
+   4,
+   13,
+   26,
+   52,
+   104
+  ],
+  "lag": {
+   "1978-1989": [
+    0.89,
+    0.72,
+    0.48,
+    0.28,
+    0.12
+   ],
+   "2002-2013": [
+    0.93,
+    0.8,
+    0.67,
+    0.54,
+    0.44
+   ],
+   "2014-2025": [
+    0.87,
+    0.66,
+    0.37,
+    0.16,
+    0.06
+   ]
+  },
+  "block": {
+   "1978-1989": [
+    0.07,
+    0.03,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "2002-2013": [
+    0.11,
+    0.06,
+    0.02,
+    0.0,
+    0.0
+   ],
+   "2014-2025": [
+    0.04,
+    0.01,
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "surfaces": {
+  "chi_q90": {
+   "hard-clay": 0.6,
+   "hard-grass": 0.65,
+   "clay-grass": 0.5
+  },
+  "chi_q95": {
+   "hard-clay": 0.6,
+   "hard-grass": 0.6,
+   "clay-grass": 0.4
+  },
+  "n_all_three_q90": 8,
+  "n_all_three_q95": 4,
+  "membership_q95": {
+   "Djokovic": 1.0,
+   "Federer": 1.0,
+   "Nadal": 0.97,
+   "Murray": 0.91
+  },
+  "rho": 0.9
+ },
+ "hyperparameters": {
+  "tau": 0.0473,
+  "tau_sd": 0.0008,
+  "sigma0": 1.0,
+  "a5": 1.15,
+  "accuracy": 0.675,
+  "brier": 0.207,
+  "platt_slope": 0.851
+ },
+ "validation": {
+  "corr_posterior_means": 0.997,
+  "mean_abs_diff_points": 7.2,
+  "sd_ratio": 1.0,
+  "subsample_matches": 21163,
+  "subsample_players": 177,
+  "subsample_periods": 422
+ },
+ "pending": "gpd and top5_profile: regenerate under the four equal-length eras"
+}
